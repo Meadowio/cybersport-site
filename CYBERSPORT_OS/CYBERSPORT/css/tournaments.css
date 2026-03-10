@@ -1,0 +1,106 @@
+.block-tournaments {
+    padding: 20px 0;
+}
+
+main div.tournaments-ul#block-registy{
+    color: #fff;
+    font-family: "Bebas Neue", sans-serif;
+
+
+}
+main div.tournaments-ul#block-registy > h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+main div.tournaments-ul#block-registy > h3 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.game {
+    border-radius: 10px;
+
+    padding: 10px;
+}
+
+ .game.selected {
+     background-color: #2b2a29;
+ }
+
+.game:hover {
+    background-color: #2b2a29;
+    text-decoration: none;
+    filter: brightness(90%);
+    transition: .5s;
+}
+
+.block-registry {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+.block-registry > form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    align-items: center;
+}
+
+input[type="text"] {
+    width: 520px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+input[type="date"] {
+    right: 50px;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.button-flex{
+    display: flex;
+    gap: 10px;
+
+}
+
+.sort-buttons-container {
+    margin: 10px 0;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+.sort-buttons-container > form {
+    display: flex;
+}
+
+.sort-buttons-container button {
+    color: #fff;
+    border: none;
+    background: none;
+    transition: color 0.3s;
+    padding: 0 10px;
+    margin: 0;
+    font-size: 24px;
+}
+
+.sort-buttons-container button:hover {
+    background: none;
+    color: #333333;
+}
+.sort-mr {
+    margin-left: 10px;
+}
+
+

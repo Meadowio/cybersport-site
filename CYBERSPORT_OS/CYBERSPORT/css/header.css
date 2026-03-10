@@ -1,0 +1,17 @@
+#exit {
+    background-color: #2b2a29;
+    color: #fff;
+    font-weight: 550;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    margin-right: 10px;
+    letter-spacing: 2px;
+    font-size: 14px;
+    transition: 1s;
+}
+.button1:hover {
+    filter: brightness(90%);
+    text-decoration: none;
+    transition: 1s;
+}

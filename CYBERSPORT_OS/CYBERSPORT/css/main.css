@@ -1,0 +1,613 @@
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    background-color: #181a1b;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    align-items: center;
+    justify-content: center;
+}
+html {
+    scroll-behavior: smooth;
+}
+A {
+    color: #fff; /* Цвет ссылок */
+}
+.container {
+    max-width: 1200px;
+    margin: 30px auto;
+    display: block;
+    align-items: center;
+}
+.container#news {
+    margin-top: 500px;
+}
+.display-f{
+    display: flex;
+}
+
+header {
+    box-sizing: border-box;
+    width: 100%;
+    height: 70px;
+    padding: 0 24px 0 24px;
+    background: #111;
+    overflow: hidden;
+    font-family: "Bebas Neue", sans-serif;
+}
+.header > .container{
+    margin: 20px auto;
+}
+.header-line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Добавлено для равномерного распределения пространства */
+}
+
+.nav-item {
+    color: #f9f9f9;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.nav-item:hover {
+    background-color: #2b2a29;
+    text-decoration: none;
+    filter: brightness(90%);
+    transition: .5s;
+}
+
+.button1 {
+    background-color: #2b2a29;
+    color: #fff;
+    font-weight: 550;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    margin-right: 10px;
+    letter-spacing: 2px;
+    font-size: 14px;
+    transition: 1s;
+}
+.button1:hover {
+    filter: brightness(90%);
+    text-decoration: none;
+    transition: 1s;
+}
+
+.button2 {
+    margin-top: 10px;
+    background-color: #0bc4e2;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 20px 20px;
+    letter-spacing: 2px;
+    transition: transform 0.3s ease-in-out;
+    border: 2px solid transparent;
+}
+
+#exit {
+    margin-top: 0;
+    background-color: #0bc4e2;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 3px 10px;
+    letter-spacing: 0;
+    transition: transform 0.3s ease-in-out;
+    border: 2px solid transparent;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.button2:hover {
+    border: 2px solid #2b2a29;
+}
+
+.header-right {
+    display: flex; /* Используем flex для выравнивания элементов внутри */
+    align-items: center; /* Выравниваем элементы по вертикали */
+}
+main {
+    margin: 0 auto;
+}
+
+.block-news > a.news-link > img{
+    width:100%;
+    margin-bottom: 10px;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 500px;
+    width:100%;
+    z-index: -1;
+}
+
+main div.container#news{
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+}
+
+main div.block-news {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+main div.block-news2 {
+    float: left;
+    clear: right;
+}
+.news-link {
+    position: relative;
+    display: inline-block;
+}
+
+.news-text {
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 25px;
+    text-align: left;
+    border: none;
+}
+.background-block {
+    position: absolute;
+    width: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0), #111);
+    height: 200px;
+    bottom: 6%;
+    border-radius: 10px;
+}
+
+.news-link:hover .news-text {
+    display: block;
+}
+.news-link img {
+    border-radius: 10px; /* Задаем радиус закругления */
+}
+
+.filler{
+    position: absolute;
+    width: 100%;
+    left:0;
+    bottom: -250px;
+    height: 500px;
+    z-index: -1;
+    background: #181a1b;
+}
+.filler-grad{
+    bottom: 250px;
+    height: 200px;
+    background: linear-gradient(rgba(255, 255, 255, 0), #181a1b);
+}
+main div.image-main  {
+    margin: -300px auto;
+}
+main div.button-game {
+    transition: transform 0.3s ease-in-out;
+}
+main div.button-game:hover {
+    transform: scale(1.1);
+}
+main div.image-main img {
+    padding: 0 5px 0 0;
+    margin-bottom: 15px;
+    width: 200px;
+}
+
+main div.button-game{
+    margin-top: 20px;
+}
+
+.tournaments-ul {
+    text-align: center;
+}
+
+.tournament-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tournament-nav .game {
+    margin: 20px;
+}
+
+.tournament-nav .game a {
+    text-decoration: none;
+}
+
+.tournament-nav .game img {
+    display: block;
+    height: auto;
+    width: 40px;
+}
+main div.tournaments-ul#tournaments{
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+}
+.block-tournaments {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.block-tournaments .tournament {
+    background-color: #2b2a29;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.block-tournaments .tournament-image {
+    display: block;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.block-tournaments .tournament-image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.block-tournaments .tournament-image:hover img {
+    transform: scale(1.1);
+}
+
+.block-tournaments .tournament-name {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.block-tournaments .tournament-box {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.block-tournaments .tournament-date {
+    font-size: 16px;
+    color: #888;
+    margin-left: 10px;
+}
+
+.block-tournaments .tournament-list {
+    margin-top: 50px;
+    padding-left: 0;
+}
+
+.block-tournaments .tournament-list li {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.block-tournaments .tournament-list li strong {
+    font-weight: bold;
+}
+
+.white {
+    color: #fff;
+}
+
+footer {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 24px 0;
+    background: #000000;
+    margin-top: 24px;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+footer > div {
+    text-align: center;
+}
+
+footer * {
+    color: #D0D9DF;
+    font-size: 16px;
+}
+
+footer > div > div#label {
+    color: #D0D9DF;
+    display: inline;
+}
+
+footer > div > a {
+    margin-left: 40px;
+}
+
+footer > div > hr {
+    clear: both;
+    height: 1px;
+    background: #1E1E1E;
+    margin-top: 24px;
+}
+
+footer > div > div#user {
+    margin-top: 24px;
+    float: left;
+}
+
+footer > div > div#copy {
+    margin-top: 24px;
+    float: right;
+}
+
+/* Connection.css */
+body.connection {
+    font-family: "Roboto Condensed", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #181a1b;
+    align-items: center;
+}
+
+.container2 {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 150px auto;
+    text-align: center;
+}
+
+h2#reg {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+p#reg_p {
+    text-align: left;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #0bc4e2;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: #0aa9bf;
+}
+
+.check {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.check label {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.check label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.check label span {
+    font-size: 14px;
+}
+
+.check label i {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.check label:hover i {
+    background-color: #ddd;
+}
+
+.check label input:checked ~ i {
+    background-color: #0bc4e2;
+    border: 1px solid #0bc4e2;
+}
+
+.check label i:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.check label input:checked ~ i:after {
+    display: block;
+}
+
+.check label i:after {
+    left: 5px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+a.read {
+    color: #0bc4e2;
+}
+
+/* Всплывающее окно */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    text-align: center;
+    border-radius: 10px;
+    width: 300px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: #333;
+    text-decoration: none;
+}
+
+.close:hover {
+    cursor: pointer;
+}
+
+
+/* Media */
+/* Разрешение с компа -- при размере экрана больше 992пикс */
+@media (min-width:992px) {
+    .block-news {
+        max-width: 36.2%;
+    }
+    .video-container{
+        min-height: 400px;
+    }
+
+
+}
+/* Разрешение с айпада(?) -- при размере экрана меньше 992пикс и больше 768п */
+@media (max-width:992px) and (min-width:768px){
+    .block-news{
+        max-width: 50%;
+    }
+    .button2 {
+        font-size: 14px;
+    }
+    main div.image-main img {
+        width: 95%;
+    }
+    main div.image-main {
+        margin: -200px auto;
+    }
+    .block-tournaments {
+        display: contents;
+    }
+}
+/* Разрешение с телефона -- при размере экрана меньше 1200пикс */
+@media (max-width:1200px) {
+    .container{
+        display: inline-block;
+    }
+    .video-container, .image-main{
+        min-height: 200px;
+    }
+
+    main div.image-main img {
+        padding: 200px 5px 0 0;
+    }
+    .block-tournaments {
+        display: grid;
+    }
+}
+/* Разрешение с телефона -- при размере экрана меньше 768пикс */
+@media (max-width:768px) {
+    .block-news{
+        max-width: 100%;
+    }
+    .news-link{
+        margin: 5px 20px;
+    }
+    .button2 {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+    main div.image-main img {
+        width: 150px;
+    }
+    main div.image-main {
+        margin: -150px auto;
+    }
+    main div.image-main img {
+        padding: 0 5px 0 7px;
+        margin-bottom: 0;
+    }
+    .container#news {
+        margin-top: 250px;
+    }
+    .block-tournaments {
+        display: contents;
+    }
+    .block-tournaments .tournament {
+        margin: 20px auto;
+        max-width: 70%;
+    }
+    .tournaments-ul {
+        margin: 97px;
+    }
+    .container2 {
+        max-width: 350px;
+    }
+}
+
